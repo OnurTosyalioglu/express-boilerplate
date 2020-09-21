@@ -1,0 +1,27 @@
+image: node:10-alpine
+
+stages:
+  - install
+  - build
+  - test
+  - deploy
+
+install: 
+  stage: install
+  script: 
+    - CI=false yarn install
+
+build: 
+  stage: build
+  script: 
+    - CI=false yarn build
+
+test: 
+  stage: test
+  script: 
+    - CI=false yarn test
+
+deploy: 
+  stage: deploy
+  script: 
+    - CI=false 
