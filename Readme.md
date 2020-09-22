@@ -1,8 +1,7 @@
 # Express Boilerplate
---
 
 ## Spec
----
+
 - Flexible
 - Plug and play
 - Preconfigured databases
@@ -11,83 +10,99 @@
 - Generator Cli
 
 ## Packages
----
 
 ### Server 
----
 
-* [PM2]()
-* [Socket.io]()
+* [PM2](https://www.npmjs.com/package/pm2)
+* [Socket.io](https://www.npmjs.com/package/socket.io)
 
 ### Databases
 
-Mysql
-MongoDB
-Redis
-Memcached
-ElasticSearch
-Kafka
+* [Mysql](https://www.npmjs.com/package/mysql2)
+* [MongoDB](https://www.npmjs.com/package/mongoose)
+* [Redis](https://www.npmjs.com/package/redis)
+* [Memcached](https://www.npmjs.com/package/memcached)
+* [ElasticSearch](https://www.npmjs.com/package/@elastic/elasticsearch)
+* [Kafka](https://www.npmjs.com/package/kafkajs)
 
 ### Middleware
 
-* [JWT]()
-* Cookie Parser
-* Cors
-* BodyParser
+* [JWT](https://www.npmjs.com/package/jsonwebtoken)
+* [Cookie Parser](https://www.npmjs.com/package/cookie-parser)
+* [Cors](https://www.npmjs.com/package/cors)
+* [BodyParser](https://www.npmjs.com/package/body-parser)
 
-Log
+### Log
 
-Winston
+* [Winston](https://www.npmjs.com/package/winston)
 
-3rd Party Services
-AWS
-Firebase
-NodeMailer
+### 3rd Party Services
 
-- dev dependencies
-Server
-nodemon
+* [AWS](https://www.npmjs.com/package/aws-sdk)
+* [Firebase](https://www.npmjs.com/package/firebase-admin)
+* [NodeMailer](https://www.npmjs.com/package/nodemailer)
 
-Transpiler & Formatting & File 
-babel
-prettier
-eslint
-rimraf
+- DEV
 
-Test
+### Server
+* [Nodemon](https://www.npmjs.com/package/nodemon)
 
-jest
-supertest
-faker
+### Transpiler & Linter & Formatting & File 
+* [Babel](https://www.npmjs.com/package/@babel/core)
+* [Prettier](https://www.npmjs.com/package/prettier)
+* [Eslint](https://www.npmjs.com/package/eslint)
+* [Rimraf](https://www.npmjs.com/package/rimraf)
+
+### Test
+
+* [jest](https://www.npmjs.com/package/jest)
+* [supertest](https://www.npmjs.com/package/supertest)
+* [faker](https://www.npmjs.com/package/faker)
+* [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Core
+
 - application
-  - usecase
-	- service
+  * usecase
+	* service
 - domain
-  - entity
-	- value objects
-	- repository
+  * entity
+  * value objects
+	* repository
 - infrastructure
-  - source
-	- model
-	- repository (concrete)
+  * source
+	* model
+	* repository (concrete)
 
 ## Build, CI/CD
+
 - Clean
+> yarn clean
+
 - Build
-- Start (hot reload)
+> yarn build
+
+- Start (hot reload/dev)
+> yarn start
+
 - Serve
+> yarn serve
+
 - Test
-- Test (hot reload)
+> yarn test
+
+- Test (hot reload/dev)
+> yarn watch
 
 Gitlab CI/CD
+
 - install
 - test
 - build
 - deploy
 
 ## Generator Cli
+
 - service
 - usecase
 - entity
