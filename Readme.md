@@ -63,16 +63,16 @@
 ## Core
 
 - application
-  * usecase
-	* service
+    * usecase
+	  * service
 - domain
-  * entity
-  * value objects
-	* repository
+    * entity
+    * value objects
+	  * repository
 - infrastructure
-  * source
-	* model
-	* repository (concrete)
+    * source
+	  * model
+	  * repository (concrete)
 
 ## Build, CI/CD
 
