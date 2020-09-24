@@ -4,9 +4,14 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const config = {
+	port: process.env.REDIS_PORT,
+	host: process.env.REDIS_HOST,
+}
+
+const options = {
 
 }
 
-redis.createClient(config)
+const client = redis.createClient(config.port, config.host, options)
 
-export default redis
+export default client
