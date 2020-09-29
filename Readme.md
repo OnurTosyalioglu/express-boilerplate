@@ -62,14 +62,14 @@
 
 ## Core
 
-- application
+* application
     * usecase
 	  * service
-- domain
+* domain
     * entity
     * value objects
 	  * repository
-- infrastructure
+* infrastructure
     * source
 	  * model
 	  * repository (concrete)
@@ -77,24 +77,24 @@
 ## Build, CI/CD
 
 - Clean
-> yarn clean
+yarn clean
 
 - Build
-> yarn build
+yarn build
 
 - Start (hot reload/dev)
-> yarn start
+yarn start
 
 - Serve
-> yarn serve
+yarn serve
 
 - Test
-> yarn test
+yarn test
 
 - Test (hot reload/dev)
-> yarn watch
+yarn watch
 
-Gitlab CI/CD
+## Gitlab CI/CD
 
 - install
 - test
